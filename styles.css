@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    /*add this line below*/
+    overflow-x: hidden;
+    font-size: 12px;
+  }
+  
+  /****************************
+  NAVBAR
+  ****************************/
+  .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 10000;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    /* border-right:1px solid #bbb; */
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navTitle {
+    width: 200px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(2em - 4px);
+}
+
+.navList {
+    float: right;
+    padding-top: 3px;
+    display: unset;
+    font-size: calc(2em - 8px);
+}
+
+.hamburgerBtn {
+    display: none;
+}
+
+/* site changes for small screen */
+@media only screen and (max-width: 600px) {
+    /* NAVBAR */
+    .navList {
+        display: none;
+    }
+
+    /* hamburger navigation for small screens */
+    .hamburgerBtn {
+        display: unset;
+        height: calc(2em - 4px);
+        text-align: center;
+        padding: 14px 16px;
+        float: right;
+    }
+}
+
+
+/*******************
+HERO
+*******************/
+    
+#heroBG {
+    height: calc(99vh - 50px);
+    width: 100%;
+   /* background: linear-gradient(rgba(44, 62, 80,.3), rgba(44, 62, 80,.3)), url('images/nourishBanner-01.jpg'); */
+    background-size: cover;
+    background-image: linear-gradient(rgba(44, 62, 80,.3), rgba(44, 62, 80,.3)), url('images/nourishBanner-01.jpg');
+    background-repeat: no-repeat;
+}
+  
+  .hero-overlay-text {
+    z-index: 5;
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero-overlay-text h1 {
+    margin-top: 0rem;
+    font-size: 10rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  
+  .call-to-action-btn {
+    background-color: rgba(253, 253, 253, 1);
+    color: #616161;
+    border-radius: 40px;
+    border: 1px solid #C1C1C1;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 15rem;
+    text-align: center;
+    transition: all 200ms;
+    box-shadow: 0 2px 0px rgba(0,0,0,.3);
+  }
+  
+  .call-to-action-btn:hover {
+    /*transform: scale(1.02);*/
+    box-shadow: 0 2px 1px rgba(0,0,0,.3);
+  }
+
+  .bannerButtonList {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    background: none;
+    margin-bottom: 50px;
+  }
+  
+  .bannerButtons {
+        background-color:  white; /* Green */
+        border: none;
+        color: white;
+        padding: 6px;
+        font-size: 1em;
+        margin: 20px 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        /* position: absolute; */
+        /* bottom: 0; */
+    }
+
+    .bannerButtons:focus {
+        outline:0;
+        background-color: gray;
+    }
+ 
+    h1 {
+        padding-bottom: 0;
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        margin-bottom: 70px;
+    }
+
+    /* for small screens */
+    @media only screen and (max-width: 700px) {
+        .hero-overlay-text h1 {
+            font-size: 5rem;
+            font-weight: 800;
+        }
+        .hero-overlay-text {
+            margin-left: 20px;
+            margin-right: 20px;
+    }
+    }
+
+
+/*******************
+ABOUT ME AND SKILLS SECTION
+*******************/
+
+.description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: calc(2em - 8px);
+}
+
+/* vertically center element inside div*/
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.skillDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+.aboutMe {
+    align-self: stretch;
+    padding-right: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 40px;
+    
+}
+.centerX {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skillImg {
+    width: 120px;
+    min-width: 120px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.myImage {
+    width: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -100;
+}
+
+.skillTitle {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 40px;
+    font-size: 30px;
+
+}
+
+@media only screen and (max-width: 780px) {
+    .skillDiv {
+        flex-wrap: wrap;
+    }
+
+    .skillImg {
+        width: 100px;
+    }
+
+    .aboutMe {
+        max-width: 500px;
+    }
+    .myImage {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+}
+/*******************
+BANNER/QUOTE
+*******************/
+
+.banner {
+    width: 100%;
+    background-color: #333;
+    height: 400px;
+}
+
+.quote {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(2em + 1px);
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 35px;
+}
+
+@media only screen and (max-width: 890px) {
+    .quote {
+        font-size: calc(2em - 1px);
+        line-height: 33px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .quote {
+        font-size: calc(2em - 4px);
+        line-height: 30px;
+    }
+}
+
+/*******************
+EXPERIENCE
+*******************/
+
+
+/*******************
+FOOTER
+*******************/
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    height: 100px;
+}
