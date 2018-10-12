@@ -1,0 +1,94 @@
+/* Your styles here */
+body {
+    background-color: #5c2aa8;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5%;
+  }
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        padding-top: 10%;
+    }
+}
+  
+  /* Some default styles to get you started */
+  
+  .box {
+    height: 150px;
+    margin: 20px;
+  }
+  
+  .a {
+    background-color: #97edab;
+    /* grid-area: one; */
+  }
+  
+  .b {
+    background-color: #e5db8e;
+    /* grid-area: 2; */
+  }
+  
+  .c {
+    background-color: #97dced;
+    /* grid-area: 3; */
+  }
+  
+  .d {
+    background-color: #97a1ed;
+    /* grid-area: 4; */
+  }
+  
+  .e {
+    background-color: #b567f6;
+    /* grid-area: 5; */
+  }
+  
+  .f {
+    background-color: #ed979e;
+    /* grid-area: 6; */
+  }
+  
+  .g {
+    background-color: #eea945;
+    /* grid-area: 7; */
+  }
+  
+  .h {
+    background-color: #e94097;
+    /* grid-area: 8; */
+  }
+  
+  .i {
+    background-color: #79eed9;
+    /* grid-area: 9; */
+  }
+
+  /* arrow up */
+  /* arrow */
+  
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 40px solid white;
+    position: absolute;
+    top: 2%;
+    left: 48%;
+}

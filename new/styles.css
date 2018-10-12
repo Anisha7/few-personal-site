@@ -1,0 +1,16 @@
+
+
+body  {
+    margin: 0;
+    background: linear-gradient(to right, #EDC20F 30%,#EDC20F 30%,#000000 30%,black 100%,black 100%);
+}
+
+.doughnut { 
+    border: 50px solid black;
+    border-radius: 100px;
+    height:100px;
+    width:100px;
+    position: absolute;
+    left: calc(30% - 100px);
+    top: 20%;
+}
