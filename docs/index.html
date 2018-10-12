@@ -25,16 +25,27 @@
     <div id="particles-js">
       <!-- banner info stuff -->
       <div class = "fixPosition">
-        <h1 id = "title" class = "" onmouseover="bounce()" onmouseout="stopBouncing()"> Anisha Jain </h1>
+        <h1 id = "title" class = "" onmouseover="bounce('title')" onmouseout="stopBouncing('title')"> Anisha Jain </h1>
+
         <!-- blurb about me -->
         <p class = "description"> 
             PASSIONATE PROGRAMMER WITH 2 YEARS OF EXPERIENCE OF PRODUCT DEVELOPMENT, DESIGN, AND MARKETING.
         </p>
+
+        <!-- social links: linkedIn, medium, instagram-->
+        <ul>
+          <li id = "LI" class = "" onmouseover="bounce('LI')" onmouseout="stopBouncing('LI')"><a href="http://linkedin.com/in/annysha/"><img src="images/linkedin.png" alt="linkedin"></a></li>
+          <li id = "Med" class = "" onmouseover="bounce('Med')" onmouseout="stopBouncing('Med')"><a href="https://medium.com/@anishaj037"><img src="images/medium.png" alt="medium"></a></li>
+          <li id = "insta" class = "" onmouseover="bounce('insta')" onmouseout="stopBouncing('insta')"><a href="http://instagram.com/almondbeans"><img src="images/insta.png" alt="instagram"></a></li>
+        </ul>
+
       </div>
+
       <!-- arrow button to take me to projects page -->
       <a href="projects.html"> -->
         <div id = "arrow" class="arrow-down"></div>
       </a>
+
     </div>
 
      
@@ -66,12 +77,21 @@
       requestAnimationFrame(update);
 
       // animation bounce on Banner 
-      let title = document.getElementById('title');
-      function bounce() {
-        title.className = "animated infinite bounce";
+      // let title = document.getElementById('title');
+      // function bounce() {
+      //   title.className = "animated infinite bounce";
+      // }
+      // function stopBouncing() {
+      //   title.className = "";
+      // }
+
+      function bounce(id) {
+        let change = document.getElementById(id);
+        change.className = "animated infinite bounce";
       }
-      function stopBouncing() {
-        title.className = "";
+      function stopBouncing(id) {
+        let change = document.getElementById(id);
+        change.className = "";
       }
 
     </script>

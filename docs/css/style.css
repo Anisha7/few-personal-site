@@ -103,9 +103,6 @@ canvas{
 h1 {
   color: white;
   font-size: 120px;
-  /* position: absolute;
-  top: 40%;
-  left: 25%; */
   font-family: 'Montserrat Alternates', sans-serif;
   padding-bottom: 20px;
 }
@@ -113,10 +110,6 @@ h1 {
 .description {
   color: lightgrey;
   font-size: 20px;
-  /* position: absolute;
-  top: 60%;
-  left: 25%;
-  right: 15%; */
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -144,4 +137,23 @@ h1 {
   position: absolute;
   top: 90%;
   left: 47%;
+}
+
+/* social icons */
+img {
+  width: 30px;
+  padding: 20px;
+  height: 30px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
 }
