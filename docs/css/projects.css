@@ -6,6 +6,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5%;
+    
   }
 
 h2 {
@@ -29,7 +30,6 @@ h2 {
   /* Some default styles to get you started */
   
   .box {
-    height: 150px;
     margin: 20px;
   }
   
@@ -91,4 +91,10 @@ h2 {
     position: absolute;
     top: 2%;
     left: 48%;
+}
+
+img {
+  width: 200px;
+  position: relative;
+  padding: 10px;
 }
