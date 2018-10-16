@@ -31,15 +31,18 @@ h2 {
   
   .box {
     margin: 20px;
+    text-align: center;
   }
   
   .a {
     background-color: #97edab;
     /* grid-area: one; */
+    
   }
   
   .b {
-    background-color: #e5db8e;
+    background-color: #d1afed;
+    /* background-color: #e5db8e; */
     /* grid-area: 2; */
   }
   
@@ -97,4 +100,23 @@ img {
   width: 200px;
   position: relative;
   padding: 10px;
+}
+
+/* projects */
+
+.project {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.description {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.projectLogo {
+  width: 150px;
 }
