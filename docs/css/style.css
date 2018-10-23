@@ -27,7 +27,7 @@ li{list-style:none}
 html,body{ 
 	width:100%;
 	height:100%;
-	background:#111;
+  background:#111;
 }
 
 html{
@@ -37,6 +37,7 @@ html{
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
   color: white;
+  box-sizing: border-box;
 }
 
 canvas{
@@ -118,7 +119,7 @@ h1 {
 .fixPosition {
   position: absolute;
   top: 35%;
-  left: 15%;
+  left: 8%;
   right: 15%;
 }
 
@@ -139,6 +140,17 @@ h1 {
   position: absolute;
   top: 90%;
   left: 47%;
+}
+
+/* project button */
+.project-button {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #5c2aa8;
 }
 
 /* social icons */
@@ -174,4 +186,22 @@ ul {
 
 .grid-2 {
   grid-area: d;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  ul {
+    padding-right: 20px;
+    padding-left: 0px;
+    margin: 0;
+    padding-top: 10px;
+  }
+
 }

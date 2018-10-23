@@ -1,6 +1,7 @@
 /* Your styles here */
 body {
     background-color: #5c2aa8;
+    box-sizing: border-box;
 }
 .container {
     display: grid;
@@ -118,5 +119,6 @@ img {
 }
 
 .projectLogo {
-  width: 150px;
+  /* width: 150px; */
+  max-height: 40px;
 }
