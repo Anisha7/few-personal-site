@@ -33,6 +33,7 @@ h2 {
   .box {
     margin: 20px;
     text-align: center;
+    border-radius: 25px;
   }
   
   .a {
@@ -101,6 +102,7 @@ img {
   width: 200px;
   position: relative;
   padding: 10px;
+  border-radius: 25px;
 }
 
 /* projects */
